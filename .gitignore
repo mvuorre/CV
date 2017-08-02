@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+templates/
+*.pdf
+source/*.log
+source/*.gz

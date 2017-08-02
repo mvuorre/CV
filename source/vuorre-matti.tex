@@ -1,0 +1,161 @@
+%!TEX program = xelatex
+%!TeX TS-program = XeLaTeX
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt, letterpaper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{letterpaper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+\linespread{1.05}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont [Scale = 1.0, Ligatures={Common}, BoldFont={Gentium Basic Bold}, ItalicFont={Gentium Basic Italic}]{Gentium Basic}
+\setmonofont[Scale=0.8]{Monaco} 
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Gentium Basic Italic}\selectfont\itshape\&}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries\upshape\Large}
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Matti Vuorre - vita},pdfauthor={Matti Vuorre}]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Matti Vuorre}\\[1cm]
+Columbia University\\
+406 Schermerhorn Hall\\
+1190 Amsterdam Avenue\\
+New York, NY 10027
+U.S.A.\\
+Phone: 646-750-5597\\
+email: \href{mailto:mv2521@columbia.edu}{mv2521@columbia.edu}\\
+\textsc{url}: \href{https://mvuorre.github.io/}{https://mvuorre.github.io/}
+
+%%\hrule
+\section*{Current Position}
+\emph{Ph.D. Student}, Columbia University, New York
+
+%%\hrule
+\section*{Areas of Specialization}
+metacognition \ • \ agency and volition \ • \ cognitive neuroscience \ • \ applied statistics
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2015}\textsc{M.A} Columbia University\\
+\years{2013}\textsc{BSc (Hons)} in Psychology, Victoria University of Wellington, New Zealand\\
+\years{2012}\textsc{BSc} in Psychology and Philosophy, Victoria University of Wellington, New Zealand
+
+%\hrule
+\section*{Grants, Honors \amper{} Awards}
+\noindent
+\years{2016}Leo Rubinstein Endowed Fellowship (Columbia University)\\
+Graduate Student Travel Award (Psychonomic Society)\\
+\years{2015}Leo Rubinstein Endowed Fellowship (Columbia University)\\
+Edward E. Smith Memorial Award in Cognitive Neuroscience (Columbia University)\\
+Best Student Poster Award (Association for the Scientific Study of Consciousness)\\
+\years{2013}Dean's Fellowship (Columbia University)\\
+\years{2012}Postgraduate Research Scholarship (Victoria University of Wellington)\\
+School of Psychology Graduate Prize (Victoria University of Wellington)\\
+Victoria University Graduate Award (Victoria University of Wellington)
+
+\section*{Publications \amper{} Academic Contributions}
+
+\subsection*{Journal articles}
+\years{2017}
+Sidarus, N., Vuorre, M., \amper{} Haggard, P. (2017). Integrating prospective and retrospective cues to the sense of agency: a multi-study investigation. \emph{Neuroscience of Consciousness}, 3(1). \\ \url{https://doi.org/10.1093/nc/nix012}\\[.2cm]
+Vuorre, M., \amper{} Metcalfe, J. (2017). Voluntary action alters the perception of visual illusions. \emph{Attention, Perception, \amper{} Psychophysics}.\\ \url{https://doi.org/10.3758/s13414-017-1321-x}\\[.2cm]
+Vuorre, M. (2017). On Time, Causation, and the Sense of Agency. \emph{Journal of Consciousness Studies}, 24(3–4), 203–215.\\ \url{http://www.ingentaconnect.com/contentone/imp/jcs/2017/00000024/F0020003/art00011}\\[.2cm]
+Sidarus, N., Vuorre, M., Metcalfe, J., \amper{} Haggard, P. (2017). Investigating the prospective sense of agency: Effects of processing fluency, stimulus ambiguity, and response conflict. \emph{Frontiers in Psychology}, 8, 545. \\ \url{https://doi.org/10.3389/fpsyg.2017.00545}\\[.2cm]
+Sidarus, N., Vuorre, M., \amper{} Haggard, P. (2017). How action selection influences the sense of agency: An ERP study. \emph{NeuroImage}, 150, 1–13. \\ \url{https://doi.org/10.1016/j.neuroimage.2017.02.015}\\[.2cm]
+\years{2016}Vuorre, M., \amper{} Metcalfe, J. (2016). The relation between the sense of agency and the experience of flow. \emph{Consciousness and Cognition}, 43. \\ \url{https://doi.org/10.1016/j.concog.2016.06.001}\\[.2cm]
+\years{2013}Michael, R. B., Newman, E. J., Vuorre, M., Cumming, G., \amper{} Garry, M. (2013). On the (non)persuasive power of a brain image. \emph{Psychonomic Bulletin \amper{} Review}, 20(4), 720–725. \\ \url{https://doi.org/10.3758/s13423-013-0391-6}
+
+\subsection*{Scientific software}
+\noindent
+\years{2017}Vuorre M. (2017). bmlm: Bayesian Multilevel Mediation. R package version 1.2.10 \\ \url{http://doi.org/10.5281/zenodo.293005}
+
+\subsection*{Invited talks}
+\noindent
+\years{2016}Vuorre, M. (2016, April). The Pragmatist’s Guide to Studying Free Will. Talk presented at the \emph{Science of Consciousness} meeting, Tucson, Arizona.
+
+\subsection*{Conference talks}
+\noindent
+\years{2016}Vuorre, M. (2016, April). Voluntary Actions Cause a Temporal Rate-Shift in Visual Awareness: Evidence from visual illusions. Talk presented at the \emph{Science of Consciousness} meeting, Tucson, Arizona.\\[.15cm]
+\years{2015}Vuorre, M., Metcalfe, J. (2015, June). Voluntary Action and Time Perception. Talk presented at the \emph{Toward a Science of Consciousness} meeting, Helsinki, Finland.
+
+\subsection*{Conference posters}
+\noindent
+\years{2016}Vuorre, M., Metcalfe, J. (2016, November). The relation between the sense of agency and the experience of flow. Poster presented at the Psychonomic Society annual meeting, Boston, USA.\\[.15cm]
+Sidarus, N., Vuorre, M., Haggard, P. (2016, September). Integrating Prospective and Retrospective Cues to the Sense of Agency: A Multi-Study Investigation. Poster presented at the British Association for Cognitive Neuroscience annual meeting, Budapest, Hungary.\\[.15cm]
+\years{2015}Vuorre, M., Metcalfe, J. (2015, July). Voluntary Actions Compress the Experience of Time. Poster presented at the Association for the Scientific Study of Consciousness annual meeting, Paris, France.\\[.15cm]
+Vuorre, M., Metcalfe, J. (2015, May). Voluntary Actions Compress the Experience of Time. Poster presented at the Association for Psychological Science annual meeting, New York, USA.\\[.25cm]
+\years{2014}Vuorre, M., Metcalfe, J. (2014, November). Voluntary Action and Time Perception. Poster presented at the Psychonomic Society annual meeting, Long Beach, USA.\\[.15cm]
+Vuorre, M., Metcalfe, J. (2014, November). Voluntary Action and Time Perception. Poster presented at the Association for the Scientific Study of Consciousness annual meeting, Brisbane, Australia.\\[.25cm]
+\years{2012}Vuorre, M. (2012, April). How shifts in tense in memory narratives affect people. Conference presentation at KiwiCAM, Wellington, New Zealand.
+
+\subsection*{Other articles}
+\noindent
+\years{2016}Vuorre, M. (2016, December 5). Introduction to Data Analysis using R. Retrieved from \url{http://blog.efpsa.org/2016/12/05/introduction-to-data-analysis-using-r/}\\[.15cm]
+\years{2014}Vuorre, M. (April 29, 2014), What Your Name Says About How Believable You Are, \emph{Scientific American}
+
+\section*{Teaching}
+
+\subsection*{Teaching Assistantships}
+\years{2017}
+Introduction to Statistical Modeling in Psychology (Columbia University)\\
+\years{2016}
+Analysis of Change (Columbia University)\\
+The Science of Psychology (Columbia University)\\
+\years{2015}
+Experimental Psychology: Human Behavior (Columbia University)\\
+\years{2014}
+The Science of Psychology (Columbia University)\\
+\years{2013}
+Visual Perception (Victoria University of Wellington)\\
+Introduction to Psychology (Victoria University of Wellington)\\
+\years{2011}
+Introduction to Psychology (Victoria University of Wellington)
+
+
+%\hrule
+\section*{Service to the profession}
+
+\subsection*{Panels organized}
+\noindent
+\years{2015}Metacognition of Agency workshop (2015, May), Co-organizer and co-chair.
+
+\subsection*{Peer review service}
+\noindent
+\emph{Acta Psychologica, Journal of Consciousness Studies, Psychology of Consciousness}
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- Typeset in \fontspec{Times New Roman}\XeTeX \\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+\href{https://mvuorre.github.io/}{https://mvuorre.github.io/cv/}}
+\end{center}
+
+\end{document}
