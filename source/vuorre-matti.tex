@@ -15,16 +15,17 @@
 \usepackage{xunicode}
 \usepackage{xltxtra}
 \defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
-\setromanfont [Scale = 1.0, Ligatures={Common}, BoldFont={Gentium Basic Bold}, ItalicFont={Gentium Basic Italic}]{Gentium Basic}
+\setromanfont [Scale = 1.0, Ligatures={Common}, BoldFont={Libertinus Serif Bold}, ItalicFont={Libertinus Serif Italic}]{Libertinus Serif}
 \setmonofont[Scale=0.8]{Monaco} 
 % ---- CUSTOM AMPERSAND
-\newcommand{\amper}{{\fontspec[Scale=.95]{Gentium Basic Italic}\selectfont\itshape\&}}
+\newcommand{\amper}{{\fontspec[Scale=.95]{Libertinus Serif Italic}\selectfont\itshape\&}}
 % ---- MARGIN YEARS
 \usepackage{marginnote}
 \newcommand{\years}[1]{\marginnote{\scriptsize #1}}
 \renewcommand*{\raggedleftmarginnote}{}
 \setlength{\marginparsep}{7pt}
 \reversemarginpar
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 % HEADINGS
 \usepackage{sectsty} 
@@ -40,24 +41,21 @@
 
 % DOCUMENT
 \begin{document}
-{\LARGE Matti Vuorre}\\[1cm]
+{\LARGE Matti Vuorre}\\[.25cm]
 Columbia University\\
 406 Schermerhorn Hall\\
 1190 Amsterdam Avenue\\
 New York, NY 10027, U.S.A.\\
-Email: \href{mailto:mv2521@columbia.edu}{mv2521@columbia.edu}\\
-\textsc{Website}: \href{https://vuorre.netlify.com}{https://vuorre.netlify.com}\\
-CV last updated: \today
+\textsc{email}: \href{mailto:mv2521@columbia.edu}{mv2521@columbia.edu}\\
+\textsc{website}: \href{https://vuorre.netlify.com}{https://vuorre.netlify.com}\\
+\textsc{cv updated}: \today
 
-%%\hrule
 \section*{Current Position}
 \emph{Postdoctoral Research Scientist}, Columbia University, New York (May 2018 -)
 
-%%\hrule
 \section*{Areas of Specialization}
 cognitive psychology \ • \ metacognition \ • \ applied statistics
 
-%\hrule
 \section*{Education}
 \noindent
 \years{2018}\textsc{PhD}, Columbia University, USA\\
@@ -66,7 +64,6 @@ cognitive psychology \ • \ metacognition \ • \ applied statistics
 \years{2013}\textsc{BSc (Hons)} in Psychology, Victoria University of Wellington, New Zealand\\
 \years{2012}\textsc{BSc} in Psychology and Philosophy, Victoria University of Wellington, New Zealand
 
-%\hrule
 \section*{Grants, Honors \amper{} Awards}
 \noindent
 \years{2016}Leo Rubinstein Endowed Fellowship (Columbia University)\\
@@ -82,8 +79,8 @@ Victoria University Graduate Award (Victoria University of Wellington)
 \section*{Publications \amper{} Academic Contributions}
 
 \subsection*{Works in progress}
-Vuorre, M., \amper{} Metcalfe, J. (submitted). Unskilled but not so unaware.\\[.2cm]
-Towner, E.\footnotemark[1], Vuorre, M.\footnotemark[1], \amper{} Metcalfe, J.\footnotemark[1] (submitted). Confidence in errors is associated with increased curiosity.
+Vuorre, M., \amper{} Metcalfe, J. (ms in prep). Unskilled but not so unaware.\\[.2cm]
+Towner, E.\footnotemark[1], Vuorre, M.\footnotemark[1], \amper{} Metcalfe, J.\footnotemark[1] (ms in prep). Confidence in errors is associated with increased curiosity.
 
 \footnotetext[1]{Equal contribution.}
 
@@ -172,7 +169,6 @@ Introduction to Psychology (Victoria University of Wellington)\\
 Introduction to Psychology (Victoria University of Wellington)
 
 
-%\hrule
 \section*{Service to the profession}
 
 \subsection*{Panels organized}
