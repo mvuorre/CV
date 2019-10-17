@@ -1,28 +1,28 @@
 %!TEX program = xelatex
 %!TeX TS-program = XeLaTeX
 %!TEX encoding = UTF-8 Unicode
-% \documentclass[12pt, letterpaper]{article}  % Switch between letter and a4
+% \documentclass[12pt, letterpaper]{article} % Switch between letter and a4
 \documentclass[12pt, a4paper]{article}
-\usepackage{fontspec} 
 
 % DOCUMENT LAYOUT
 \usepackage{geometry} 
-\geometry{textwidth=5.5in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
-\setlength\parindent{0in}
-\linespread{1.05}
+\geometry{textwidth=5.5in, textheight=9.5in, marginparsep=12pt, marginparwidth=.6in}
+\parindent 2.5cm
+\parskip 0cm
+\linespread{1.1}
 
 % FONTS
 \usepackage{xunicode}
 \usepackage{xltxtra}
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont [Scale = 1.0, Ligatures={Common}, BoldFont={Libertinus Serif Bold}, ItalicFont={Libertinus Serif Italic}]{Libertinus Serif}
-% MARGIN YEARS
+% Year as margin note on left
 \usepackage{marginnote}
 \newcommand{\years}[1]{\marginnote{\scriptsize #1}}
-\renewcommand*{\raggedleftmarginnote}{}
-\setlength{\marginparsep}{7pt}
 \reversemarginpar
+% Footnotes as symbols
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
 % HEADINGS
 \usepackage{sectsty} 
 \usepackage[normalem]{ulem} 
@@ -30,12 +30,19 @@
 \subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
 \subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
 
+% List format
+\usepackage{fontspec} 
+\usepackage{enumitem}
+\setlist[itemize]{label={},itemindent=-1em,leftmargin=1em,itemsep=0em}
+
 % PDF SETUP
-\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Matti Vuorre - vita},pdfauthor={Matti Vuorre}]{hyperref}  
+\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Matti Vuorre - vita},pdfauthor={Matti Vuorre}]{hyperref} 
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+\urlstyle{same}
 
 % Content
 \begin{document}
+\noindent
 {\LARGE Matti Vuorre}\\[.25cm]
 Columbia University\\
 406 Schermerhorn Hall\\
@@ -52,7 +59,6 @@ New York, NY 10027, U.S.A.\\
 cognitive psychology \ • \ metacognition \ • \ applied statistics
 
 \section*{Education}
-\noindent
 \years{2018}\textsc{PhD}, Columbia University, USA\\
 \years{2017}\textsc{MPhil}, Columbia University, USA\\
 \years{2015}\textsc{M.A}, Columbia University, USA\\
@@ -60,7 +66,6 @@ cognitive psychology \ • \ metacognition \ • \ applied statistics
 \years{2012}\textsc{BSc} in Psychology and Philosophy, Victoria University of Wellington, New Zealand
 
 \section*{Grants, Honors \& Awards}
-\noindent
 \years{2016}Leo Rubinstein Endowed Fellowship (Columbia University)\\
 Graduate Student Travel Award (Psychonomic Society)\\
 \years{2015}Leo Rubinstein Endowed Fellowship (Columbia University)\\
@@ -74,84 +79,76 @@ Victoria University Graduate Award (Victoria University of Wellington)
 \section*{Publications \& Academic Contributions}
 
 \subsection*{Works in progress}
-Vuorre, M., \& Metcalfe, J. (ms in prep). Unskilled but not so unaware.\\[.2cm]
-Towner, E.\footnotemark[1], Vuorre, M.\footnotemark[1], \& Metcalfe, J.\footnotemark[1] (ms in prep). Confidence in errors is associated with increased curiosity.
+\begin{itemize}
+\item Vuorre, M., \& Metcalfe, J. (ms in prep). Unskilled but not so unaware.
+\item Towner, E.\footnotemark[1], Vuorre, M.\footnotemark[1], \& Metcalfe, J.\footnotemark[1] (ms in prep). Confidence in errors is associated with increased curiosity.
+\end{itemize}
 
 \footnotetext[1]{Equal contribution.}
 
 \subsection*{Journal articles}
-\years{2019}
-Metcalfe, J., Brezler, J. C., McNamara, J., Maletta, G., \& Vuorre, M. (2019). Memory, stress, and the hippocampal hypothesis: Firefighters' recollections of the fireground. \emph{Hippocampus}. \\ \url{https://doi.org/10.1002/hipo.23128}\\[.2cm]
-Bürkner, P.-C., \& Vuorre, M. (2019). Ordinal Regression Models in Psychology: A Tutorial. \emph{Advances in Methods and Practices in Psychological Science}. \\ \url{https://doi.org/10.1177/2515245918823199}\\[.2cm]
-\years{2018}
-Bloom, P. A., Friedman, D., Xu, J., Vuorre, M., \& Metcalfe, J. (2018). Tip-of-the-tongue states predict enhanced feedback processing and subsequent memory. \emph{Consciousness and Cognition}. \\ \url{https://doi.org/10.1016/j.concog.2018.05.010}\\[.2cm]
-Vuorre, M., \& Curley, J. P. (2018). Curating Research Assets: A Tutorial on the Git Version Control System. \emph{Advances in Methods and Practices in Psychological Science}. \\ \url{https://doi.org/10.1177/2515245918754826}\\[.2cm]
-Heino, M. T. J.\footnotemark[1], Vuorre, M.\footnotemark[1], \& Hankonen, N. (2018). Bayesian evaluation of behavior change interventions: A brief introduction and a practical example. \emph{Health Psychology and Behavioral Medicine: an Open Access Journal}. \\ \url{https://doi.org/10.1080/21642850.2018.1428102}\\[.2cm]
-Chapman, S., Colvin, L. E., Vuorre, M., Cocchini, G., Metcalfe, J., Huey, E. D., \& Cosentino, S. (2018). Cross domain self-monitoring in anosognosia for memory loss in Alzheimer's disease. \emph{Cortex}. \\ \url{https://doi.org/10.1016/j.cortex.2018.01.019}\\[.2cm]
-\years{2017}
-Vuorre, M. \& Bolger, N. (2017). Within-subject mediation analysis for experimental data in cognitive psychology and neuroscience. \emph{Behavior Research Methods}. \\ \url{https://doi.org/10.3758/s13428-017-0980-9}\\[.2cm]
-Sidarus, N., Vuorre, M., \& Haggard, P. (2017). Integrating prospective and retrospective cues to the sense of agency: a multi-study investigation. \emph{Neuroscience of Consciousness}, 3(1). \\ \url{https://doi.org/10.1093/nc/nix012}\\[.2cm]
-Vuorre, M. \& Metcalfe, J. (2017). Voluntary action alters the perception of visual illusions. \emph{Attention, Perception, \& Psychophysics}.\\ \url{https://doi.org/10.3758/s13414-017-1321-x}\\[.2cm]
-Vuorre, M. (2017). On Time, Causation, and the Sense of Agency. \emph{Journal of Consciousness Studies}, 24(3–4), 203–215.\\ \url{http://www.ingentaconnect.com/contentone/imp/jcs/2017/00000024/F0020003/art00011}\\[.2cm]
-Sidarus, N., Vuorre, M., Metcalfe, J., \& Haggard, P. (2017). Investigating the prospective sense of agency: Effects of processing fluency, stimulus ambiguity, and response conflict. \emph{Frontiers in Psychology}, 8, 545. \\ \url{https://doi.org/10.3389/fpsyg.2017.00545}\\[.2cm]
-Sidarus, N., Vuorre, M., \& Haggard, P. (2017). How action selection influences the sense of agency: An ERP study. \emph{NeuroImage}, 150, 1–13. \\ \url{https://doi.org/10.1016/j.neuroimage.2017.02.015}\\[.2cm]
-\years{2016}
-Vuorre, M. \& Metcalfe, J. (2016). The relation between the sense of agency and the experience of flow. \emph{Consciousness and Cognition}, 43. \\ \url{https://doi.org/10.1016/j.concog.2016.06.001}\\[.2cm]
-\years{2013}
-Michael, R. B., Newman, E. J., Vuorre, M., Cumming, G., \& Garry, M. (2013). On the (non)persuasive power of a brain image. \emph{Psychonomic Bulletin \& Review}, 20(4), 720–725. \\ \url{https://doi.org/10.3758/s13423-013-0391-6}
+\begin{itemize}[label={},itemindent=-1em,leftmargin=1em,itemsep=0em]
+\item \years{2019} Metcalfe, J., Brezler, J. C., McNamara, J., Maletta, G., \& Vuorre, M. (2019). Memory, stress, and the hippocampal hypothesis: Firefighters' recollections of the fireground. \emph{Hippocampus}. \url{https://doi.org/10.1002/hipo.23128}
+\item Bürkner, P.-C., \& Vuorre, M. (2019). Ordinal Regression Models in Psychology: A Tutorial. \emph{Advances in Methods and Practices in Psychological Science}. \url{https://doi.org/10.1177/2515245918823199}
+\item \years{2018} Bloom, P. A., Friedman, D., Xu, J., Vuorre, M., \& Metcalfe, J. (2018). Tip-of-the-tongue states predict enhanced feedback processing and subsequent memory. \emph{Consciousness and Cognition}. \url{https://doi.org/10.1016/j.concog.2018.05.010}
+\item Vuorre, M., \& Curley, J. P. (2018). Curating Research Assets: A Tutorial on the Git Version Control System. \emph{Advances in Methods and Practices in Psychological Science}. \url{https://doi.org/10.1177/2515245918754826}
+\item Heino, M. T. J.\footnotemark[1], Vuorre, M.\footnotemark[1], \& Hankonen, N. (2018). Bayesian evaluation of behavior change interventions: A brief introduction and a practical example. \emph{Health Psychology and Behavioral Medicine: an Open Access Journal}. \url{https://doi.org/10.1080/21642850.2018.1428102}
+\item Chapman, S., Colvin, L. E., Vuorre, M., Cocchini, G., Metcalfe, J., Huey, E. D., \& Cosentino, S. (2018). Cross domain self-monitoring in anosognosia for memory loss in Alzheimer's disease. \emph{Cortex}. \url{https://doi.org/10.1016/j.cortex.2018.01.019}
+\item \years{2017} Vuorre, M. \& Bolger, N. (2017). Within-subject mediation analysis for experimental data in cognitive psychology and neuroscience. \emph{Behavior Research Methods}. \url{https://doi.org/10.3758/s13428-017-0980-9}
+\item Sidarus, N., Vuorre, M., \& Haggard, P. (2017). Integrating prospective and retrospective cues to the sense of agency: a multi-study investigation. \emph{Neuroscience of Consciousness}, 3(1). \url{https://doi.org/10.1093/nc/nix012}
+\item Vuorre, M. \& Metcalfe, J. (2017). Voluntary action alters the perception of visual illusions. \emph{Attention, Perception, \& Psychophysics}. \url{https://doi.org/10.3758/s13414-017-1321-x}
+\item Vuorre, M. (2017). On Time, Causation, and the Sense of Agency. \emph{Journal of Consciousness Studies}, 24(3–4), 203–215. \url{http://www.ingentaconnect.com/contentone/imp/jcs/2017/00000024/F0020003/art00011}
+\item Sidarus, N., Vuorre, M., Metcalfe, J., \& Haggard, P. (2017). Investigating the prospective sense of agency: Effects of processing fluency, stimulus ambiguity, and response conflict. \emph{Frontiers in Psychology}, 8, 545. \url{https://doi.org/10.3389/fpsyg.2017.00545}
+\item Sidarus, N., Vuorre, M., \& Haggard, P. (2017). How action selection influences the sense of agency: An ERP study. \emph{NeuroImage}, 150, 1–13. \url{https://doi.org/10.1016/j.neuroimage.2017.02.015}
+\item \years{2016} Vuorre, M. \& Metcalfe, J. (2016). The relation between the sense of agency and the experience of flow. \emph{Consciousness and Cognition}, 43. \url{https://doi.org/10.1016/j.concog.2016.06.001}
+\item \years{2013} Michael, R. B., Newman, E. J., Vuorre, M., Cumming, G., \& Garry, M. (2013). On the (non)persuasive power of a brain image. \emph{Psychonomic Bulletin \& Review}, 20(4), 720–725. \url{https://doi.org/10.3758/s13423-013-0391-6}
+\end{itemize}
 
 \subsection*{Scientific software}
-\noindent
-Vuorre M. (2017). bmlm: Bayesian Multilevel Mediation. \\ \url{https://cran.r-project.org/package=bmlm}
-
-\subsection*{Invited talks}
-\noindent
-\years{2016}Vuorre, M. (2016, April). The Pragmatist’s Guide to Studying Free Will. Talk presented at the \emph{Science of Consciousness} meeting, Tucson, Arizona.
+\begin{itemize}
+\item \years{2017} Vuorre M. (2017). bmlm: Bayesian Multilevel Mediation. \\ \url{https://cran.r-project.org/package=bmlm}
+\end{itemize}
 
 \subsection*{Talks}
-\noindent
-\years{2018}Vuorre, M. (2018, February). Within-subject mediation analysis for experimental data in cognitive psychology and neuroscience. Talk presented at Columbia University. \\[.15cm]
-\years{2017}Vuorre, M. (2017, November). Within-subject mediation analysis for experimental data in cognitive psychology and neuroscience. Talk presented at Rutgers University. \\[.15cm]
-Vuorre, M., Sidarus, N., \& Metcalfe, J. (2017, September). A Meta-Analytic Review of Agency Cues. Talk presented at the \emph{European Society for Cognitive Psychology} meeting, Potsdam, Germany. \\[.15cm]
-\years{2016}Vuorre, M. (2016, April). Voluntary Actions Cause a Temporal Rate-Shift in Visual Awareness: Evidence from visual illusions. Talk presented at the \emph{Science of Consciousness} meeting, Tucson, Arizona.\\[.15cm]
-\years{2015}Vuorre, M. \& Metcalfe, J. (2015, June). Voluntary Action and Time Perception. Talk presented at the \emph{Toward a Science of Consciousness} meeting, Helsinki, Finland.
+\begin{itemize}
+\item \years{2018} Vuorre, M. (2018, February). Within-subject mediation analysis for experimental data in cognitive psychology and neuroscience. Talk presented at Columbia University.
+\item \years{2017} Vuorre, M., Sidarus, N., \& Metcalfe, J. (2017, September). A Meta-Analytic Review of Agency Cues. Talk presented at the \emph{European Society for Cognitive Psychology} meeting, Potsdam, Germany.
+\item \years{2016} Vuorre, M. (2016, April). The Pragmatist's Guide to Studying Free Will. Talk presented at the \emph{Science of Consciousness} meeting, Tucson, Arizona.
+\item \years{2016} Vuorre, M. (2016, April). Voluntary Actions Cause a Temporal Rate-Shift in Visual Awareness: Evidence from visual illusions. Talk presented at the \emph{Science of Consciousness} meeting, Tucson, Arizona.
+\item \years{2015} Vuorre, M. \& Metcalfe, J. (2015, June). Voluntary Action and Time Perception. Talk presented at the \emph{Toward a Science of Consciousness} meeting, Helsinki, Finland.
+\end{itemize}
 
 \subsection*{Conference posters}
-\years{2019}
-Vuorre, M. \& Metcalfe, J. (2019, March). Confidence-Accuracy Relationship in Mathematics. Poster presented (by JM) at the International Convention of Psychological Science, Paris, France.\\[.15cm]
-Vuorre, M., Xu, J., \& Metcalfe, J. (2019, January). Learning from Errors. Poster presented at the IES Annual Principal Investigators Meeting, Washington DC, USA.\\[.25cm]
-\years{2018}
-Vuorre, M. \& Metcalfe, J. (2018, November). Learning from Errors: Students' Confidence and Instructional Choices. Poster presented at the Psychonomic Society annual meeting, New Orleans, USA.\\[.15cm]
-\years{2017}
-Vuorre, M. \& Bolger, N. (2017, November). Within-Subject Mediation Analysis for Experimental Data in Cognitive Psychology and Neuroscience. Poster presented at the Psychonomic Society annual meeting, Vancouver, Canada.\\[.15cm]
-Vuorre, M., Metcalfe, J., Friedman, D., Bloom, P., Xu, J., \& Bolger, N. (2017, September). Within-Subject Mediation Analysis for Experimental Data in Cognitive Psychology and Neuroscience. Poster presented at the European Society for Cognitive Psychology, Potsdam, Germany.\\[.15cm]
-Metcalfe, J., Bloom, P. A., Xu, J., Vuorre, M., \& Friedman, D. (2017, March). Tip-of-the-Tongue States Enhance Processing to Feedback. Poster presented at the Cognitive Neuroscience Society annual meeting, San Fransisco, USA.\\[.25cm]
-\years{2016}
-Vuorre, M., Metcalfe, J. (2016, November). The relation between the sense of agency and the experience of flow. Poster presented at the Psychonomic Society annual meeting, Boston, USA.\\[.15cm]
-Sidarus, N., Vuorre, M., Haggard, P. (2016, September). Integrating Prospective and Retrospective Cues to the Sense of Agency: A Multi-Study Investigation. Poster presented at the British Association for Cognitive Neuroscience annual meeting, Budapest, Hungary.\\[.25cm]
-\years{2015}
-Vuorre, M., Metcalfe, J. (2015, July). Voluntary Actions Compress the Experience of Time. Poster presented at the Association for the Scientific Study of Consciousness annual meeting, Paris, France.\\[.15cm]
-Vuorre, M., Metcalfe, J. (2015, May). Voluntary Actions Compress the Experience of Time. Poster presented at the Association for Psychological Science annual meeting, New York, USA.\\[.25cm]
-\years{2014}
-Vuorre, M., Metcalfe, J. (2014, November). Voluntary Action and Time Perception. Poster presented at the Psychonomic Society annual meeting, Long Beach, USA.\\[.15cm]
-Vuorre, M., Metcalfe, J. (2014, November). Voluntary Action and Time Perception. Poster presented at the Association for the Scientific Study of Consciousness annual meeting, Brisbane, Australia.\\[.25cm]
-\years{2012}
-Vuorre, M. (2012, April). How shifts in tense in memory narratives affect people. Conference presentation at KiwiCAM, Wellington, New Zealand.
+\begin{itemize}
+\item \years{2019} Vuorre, M. \& Metcalfe, J. (2019, March). Confidence-Accuracy Relationship in Mathematics. Poster presented (by JM) at the International Convention of Psychological Science, Paris, France.
+\item Vuorre, M., Xu, J., \& Metcalfe, J. (2019, January). Learning from Errors. Poster presented at the IES Annual Principal Investigators Meeting, Washington DC, USA.
+\item \years{2018} Vuorre, M. \& Metcalfe, J. (2018, November). Learning from Errors: Students' Confidence and Instructional Choices. Poster presented at the Psychonomic Society annual meeting, New Orleans, USA.
+\item \years{2017} Vuorre, M. \& Bolger, N. (2017, November). Within-Subject Mediation Analysis for Experimental Data in Cognitive Psychology and Neuroscience. Poster presented at the Psychonomic Society annual meeting, Vancouver, Canada.
+\item Vuorre, M., Metcalfe, J., Friedman, D., Bloom, P., Xu, J., \& Bolger, N. (2017, September). Within-Subject Mediation Analysis for Experimental Data in Cognitive Psychology and Neuroscience. Poster presented at the European Society for Cognitive Psychology, Potsdam, Germany.
+\item Metcalfe, J., Bloom, P. A., Xu, J., Vuorre, M., \& Friedman, D. (2017, March). Tip-of-the-Tongue States Enhance Processing to Feedback. Poster presented at the Cognitive Neuroscience Society annual meeting, San Fransisco, USA.
+\item \years{2016} Vuorre, M., Metcalfe, J. (2016, November). The relation between the sense of agency and the experience of flow. Poster presented at the Psychonomic Society annual meeting, Boston, USA.
+\item Sidarus, N., Vuorre, M., Haggard, P. (2016, September). Integrating Prospective and Retrospective Cues to the Sense of Agency: A Multi-Study Investigation. Poster presented at the British Association for Cognitive Neuroscience annual meeting, Budapest, Hungary.
+\item \years{2015} Vuorre, M., Metcalfe, J. (2015, July). Voluntary Actions Compress the Experience of Time. Poster presented at the Association for the Scientific Study of Consciousness annual meeting, Paris, France.
+\item Vuorre, M., Metcalfe, J. (2015, May). Voluntary Actions Compress the Experience of Time. Poster presented at the Association for Psychological Science annual meeting, New York, USA.
+\item \years{2014} Vuorre, M., Metcalfe, J. (2014, November). Voluntary Action and Time Perception. Poster presented at the Psychonomic Society annual meeting, Long Beach, USA.
+\item Vuorre, M., Metcalfe, J. (2014, November). Voluntary Action and Time Perception. Poster presented at the Association for the Scientific Study of Consciousness annual meeting, Brisbane, Australia.
+\item \years{2012} Vuorre, M. (2012, April). How shifts in tense in memory narratives affect people. Conference presentation at KiwiCAM, Wellington, New Zealand.
+\end{itemize}
 
 \subsection*{Other articles}
-\noindent
-\years{2016}Vuorre, M. (2016, December 5). Introduction to Data Analysis using R.\\ \url{http://blog.efpsa.org/2016/12/05/introduction-to-data-analysis-using-r/}\\[.2cm]
-\years{2014}Vuorre, M. (April 29, 2014), What Your Name Says About How Believable You Are, \emph{Scientific American}\\ \url{https://www.scientificamerican.com/article/what-your-name-says-about-how-believable-you-are/}
+\begin{itemize}
+\item \years{2016} Vuorre, M. (2016, December 5). Introduction to Data Analysis using R. \emph{JEPS Bulletin}. \url{http://blog.efpsa.org/2016/12/05/introduction-to-data-analysis-using-r/}
+\item \years{2014} Vuorre, M. (April 29, 2014), What Your Name Says About How Believable You Are, \emph{Scientific American}. \url{https://www.scientificamerican.com/article/what-your-name-says-about-how-believable-you-are/}
+\end{itemize}
 
 \section*{Teaching}
 
 \subsection*{Workshops taught}
-\years{2019}
-Bayesian modelling with the Stan probabilistic programming language (Columbia University; \url{https://github.com/mvuorre/ulam})\\
-\years{2018}
-Hierarchical modelling of change over time (University of Aberdeen)\\
-\years{2017}
-Within-subject mediation analysis for experimental data in cognitive psychology and neuroscience (Rutgers University; \url{https://github.com/mvuorre/2017-rutgers-mediation})\\
+\begin{itemize}
+\item \years{2019} Bayesian modelling with the Stan probabilistic programming language (Columbia University; \url{https://github.com/mvuorre/ulam})
+\item \years{2018} Hierarchical modelling of change over time (University of Aberdeen)
+\item \years{2017} Within-subject mediation analysis for experimental data in cognitive psychology and neuroscience (Rutgers University; \url{https://github.com/mvuorre/2017-rutgers-mediation})
+\end{itemize}
 
 \subsection*{Teaching Assistantships}
 \years{2018}
@@ -175,11 +172,9 @@ Introduction to Psychology (Victoria University of Wellington)
 \section*{Service to the profession}
 
 \subsection*{Panels organized}
-\noindent
-\years{2015}Metacognition of Agency workshop (2015, May), Co-organizer and co-chair.
+Metacognition of Agency workshop (2015, May), Co-organizer and co-chair.
 
 \subsection*{Peer review service}
-\noindent
 Acta Psychologica \\
 Attention, Perception, \& Psychophysics \\
 Journal of Consciousness Studies \\
