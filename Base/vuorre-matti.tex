@@ -1,18 +1,28 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
 %!TEX program = xelatex
 %!TeX TS-program = XeLaTeX
 %!TEX encoding = UTF-8 Unicode
-% \documentclass[12pt, letterpaper]{article} % Switch between letter and a4
 \documentclass[12pt, a4paper]{article}
 
 % DOCUMENT LAYOUT
 \usepackage{geometry} 
-\geometry{textwidth=5.5in, textheight=9.5in, marginparsep=12pt, marginparwidth=.6in}
-\parindent 2.5cm
-\parskip 0cm
-\linespread{1.05}
-% \usepackage[hyphenbreaks]{breakurl}
+\geometry{textwidth=14.8cm, textheight=24.1cm, marginparsep=12pt, marginparwidth=1.5cm}
+\parindent 0.0cm
+\parskip 0.1cm
+\linespread{1.25}
 \usepackage[hyphens]{url}
 \usepackage{multicol}
+\setlength{\columnsep}{-1.0cm}
 
 % FONTS
 \usepackage{xunicode}
@@ -26,52 +36,74 @@
 % Footnotes as symbols
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
+% Date formatting
+\usepackage[yyyymmdd]{datetime}
+\renewcommand{\dateseparator}{-}
+
 % HEADINGS
 \usepackage{sectsty} 
 \usepackage[normalem]{ulem} 
 \sectionfont{\rmfamily\mdseries\upshape\Large}
 \subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
 \subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+% Space around headers
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{12pt}{8pt}
+\titlespacing\subsection{0pt}{8pt}{4pt}
+
+% Icons
+\usepackage{fontawesome5}
+\usepackage{academicons}
 
 % List format
-\usepackage{fontspec} 
 \usepackage{enumitem}
 \setlist[itemize]{label={},itemindent=0em,leftmargin=0em,itemsep=-0.4em}
 
 % PDF SETUP
-\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Matti Vuorre - vita},pdfauthor={Matti Vuorre}]{hyperref} 
+\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Matti Vuorre - CV},pdfauthor={Matti Vuorre}]{hyperref} 
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
 \urlstyle{same}
 
 % Content
 \begin{document}
-\noindent
-{\LARGE Matti Vuorre}\\[.25cm]
-Columbia University\\
-406 Schermerhorn Hall\\
-1190 Amsterdam Avenue\\
-New York, NY 10027, U.S.A.\\
-\textsc{email:} \href{mailto:mv2521@columbia.edu}{mv2521@columbia.edu}\\
-\textsc{website:} \href{https://vuorre.netlify.com}{https://vuorre.netlify.com}\\
-\textsc{cv date:} \today
+\noindent{\LARGE Matti Vuorre}\\[4pt]
+{\Large >> Curriculum vitae}
+\vspace{24pt}
 
-\section*{Current Position}
-\emph{Postdoctoral Research Scientist}, Columbia University, New York (May 2018 -)
+\setlength\multicolsep{0pt}
+\begin{multicols}{2}
+Oxford Internet Institute\\
+University of Oxford\\
+1 St Giles, Oxford, OX1 3JS\\
+United Kingdom\\
+\faIcon[regular]{envelope} \href{mailto:matti.vuorre@oii.ox.ac.uk}{matti.vuorre@oii.ox.ac.uk}\\
+\vfill\null
+\columnbreak
+\faIcon[regular]{globe} \href{https://vuorre.online}{vuorre.online}\\
+\faIcon[regular]{twitter} \href{https://twitter.com/vuorre}{vuorre}\\
+\aiOrcid \ \href{https://orcid.org/0000-0001-5052-066X}{0000-0001-5052-066X}\\
+\aiOSF \ \href{https://osf.tdyix/}{tdyix}\\
+\aiCV \ \today \ [\href{https://vuorre.online/pdf/vuorre-matti.pdf}{latest}]
+\end{multicols}
 
-\section*{Areas of Specialization}
-cognitive psychology \ • \ metacognition \ • \ applied statistics
+I am a psychological scientist at the Oxford Internet Institute, where I study how digital environments relate to psychological well-being and cognition using experimental, data science, and statistical methods. 
+
+\section*{Academic Positions}
+\begin{itemize}
+\item \years{2020 - now} \emph{Postdoctoral Researcher}, Oxford Internet Institute, University of Oxford
+\item \years{2018 - 2020} \emph{Postdoctoral Research Scientist}, Department of Psychology, Columbia University
+\end{itemize}
 
 \section*{Education}
 \begin{itemize}
 \item \years{2018}\textsc{PhD}, Columbia University, USA
-\item \years{2017}\textsc{MPhil}, Columbia University, USA
 \item \years{2015}\textsc{M.A}, Columbia University, USA
-\item \years{2013}\textsc{BSc (Hons)} in Psychology, Victoria University of Wellington, New Zealand
-\item \years{2012}\textsc{BSc} in Psychology and Philosophy, Victoria University of Wellington, New Zealand
+\item \years{2013}\textsc{BSc (Hons)}, Victoria University of Wellington, New Zealand
 \end{itemize}
 
 \section*{Grants, Honors \& Awards}
 \begin{itemize}
+\item \years{2021}John Fell Fund award (University of Oxford)
 \item \years{2016}Leo Rubinstein Endowed Fellowship (Columbia University)
 \item Graduate Student Travel Award (Psychonomic Society)
 \item \years{2015}Leo Rubinstein Endowed Fellowship (Columbia University)
@@ -86,15 +118,26 @@ cognitive psychology \ • \ metacognition \ • \ applied statistics
 % Give more space to list items
 \setlist[itemize]{label={},itemindent=0em,leftmargin=0em,itemsep=0em}
 \section*{Publications \& Academic Contributions}
+For the most up-to-date info, see \href{https://www.zotero.org/vuorre}{\aiZotero otero} or \href{https://scholar.google.com/citations?hl=en&user=I4DSy-8AAAAJ&view_op=list_works&sortby=pubdate}{\aiGoogleScholar oogle Scholar}.
 \subsection*{Works in progress}
 \begin{itemize}
-\item Vuorre, M., \& Metcalfe, J. (ms in prep). Unskilled but not so unaware.
-\item Towner, E.\footnotemark[1], Vuorre, M.\footnotemark[1], \& Metcalfe, J.\footnotemark[1] (ms in prep). Confidence in errors is associated with increased curiosity.
-\footnotetext[1]{Equal contribution.}
+\item Johannes, N., Masur, P. K., Vuorre, M., \& Przybylski, A. K. (2021). How should we investigate variation in the relation between social media and well-being? \emph{PsyArXiv}. \url{https://doi.org/10.31234/osf.io/xahbg}
+\item Johannes, N., Vuorre, M., Magnusson, K., \& Przybylski, A. K. (2022). Time spent playing two online shooters has no measurable effect on aggressive affect. \emph{PsyArXiv}. \url{https://doi.org/10.31234/osf.io/gt8ze}
+\item Syed Sheriff, R., Vuorre, M., Riga, E., Przybylski, A., Adams, H., Harmer, C. J., \& Geddes, J. (2021). An Online Cultural Experience for Mental Health in People Aged 16-24 Compared to a Typical Museum Website: A Randomised Controlled Trial. \emph{SSRN}. \url{https://doi.org/10.2139/ssrn.3934229}
+\item Vuorre, M., Johannes, N., Magnusson, K., \& Przybylski, A. K. (2021). Time spent playing video games is unlikely to impact well-being. \emph{PsyArXiv}. \url{https://doi.org/10.31234/osf.io/8cxyh}
+
 \end{itemize}
 
 \subsection*{Journal articles}
 \begin{itemize}
+\item \years{2021} Vuorre, M., Orben, A., \& Przybylski, A. K. (2021). There Is No Evidence That Associations Between Adolescents’ Digital Technology Engagement and Mental Health Problems Have Increased. \emph{Clinical Psychological Science}, 2167702621994549. \url{https://doi.org/10.1177/2167702621994549}
+\item Vuorre, M., Zendle, D., Petrovskaya, E., Ballou, N., \& Przybylski, A. K. (2021). A Large-Scale Study of Changes to the Quantity, Quality, and Distribution of Video Game Play During a Global Health Pandemic. \emph{Technology, Mind, and Behavior}. \url{https://doi.org/10.1037/tmb0000048}
+\item Metcalfe, J., Kennedy-Pyers, T., \& Vuorre, M. (2021). Curiosity and the desire for agency: Wait, wait … don’t tell me! \emph{Cognitive Research: Principles and Implications}. \url{https://doi.org/10.1186/s41235-021-00330-0}
+\item Johannes, N.\footnotemark[1], Vuorre, M.\footnotemark[1], \& Przybylski, A. K.\footnotemark[1] (2021). Video game play is positively correlated with well-being. \emph{Royal Society Open Science}, 8(2), 202049. \url{https://doi.org/10.1098/rsos.202049}
+\footnotetext[1]{Equal contribution.}
+\item Vuorre, M., \& Metcalfe, J. (2021). Measures of relative metacognitive accuracy are confounded with task performance in tasks that permit guessing. \emph{Metacognition and Learning.} \url{https://doi.org/10.1007/s11409-020-09257-1}
+
+\item \years{2020} Vuorre, M.\footnotemark[1], \& Crump, M. J. C.\footnotemark[1] (2020). Sharing and organizing research products as R packages. \emph{Behavior Research Methods}. \url{https://doi.org/10.3758/s13428-020-01436-x}
 \item \years{2019} Metcalfe, J., Brezler, J. C., McNamara, J., Maletta, G., \& Vuorre, M. (2019). Memory, stress, and the hippocampal hypothesis: Firefighters' recollections of the fireground. \emph{Hippocampus}. \url{https://doi.org/10.1002/hipo.23128}
 \item Bürkner, P.-C., \& Vuorre, M. (2019). Ordinal regression models in psychology: A tutorial. \emph{Advances in Methods and Practices in Psychological Science}. \url{https://doi.org/10.1177/2515245918823199}
 \item \years{2018} Bloom, P. A., Friedman, D., Xu, J., Vuorre, M., \& Metcalfe, J. (2018). Tip-of-the-tongue states predict enhanced feedback processing and subsequent memory. \emph{Consciousness and Cognition}. \url{https://doi.org/10.1016/j.concog.2018.05.010}
@@ -139,8 +182,14 @@ cognitive psychology \ • \ metacognition \ • \ applied statistics
 \setlist[itemize]{label={},itemindent=0em,leftmargin=0em,itemsep=-0.4em}
 \section*{Teaching}
 
-\subsection*{Workshops taught}
+\subsection*{Courses}
 \begin{itemize}
+\item \years{2021-2022} Experiments for Social Data Science (University of Oxford)
+\end{itemize}
+
+\subsection*{Workshops}
+\begin{itemize}
+\item \years{2020} Bayesian regression modelling with brms (University of Zürich; \url{https://mvuorre.github.io/brms-workshop/})
 \item \years{2019} Bayesian modelling with the Stan probabilistic programming language (Columbia University; \url{https://github.com/mvuorre/ulam})
 \item \years{2018} Hierarchical modelling of change over time (University of Aberdeen)
 \item \years{2017} Within-subject mediation analysis for experimental data in cognitive psychology and neuroscience (Rutgers University; \url{https://github.com/mvuorre/2017-rutgers-mediation})
@@ -160,18 +209,18 @@ cognitive psychology \ • \ metacognition \ • \ applied statistics
 \end{itemize}
 
 \section*{Service to the profession}
-\subsection*{Panels organized}
-\begin{itemize}
-\item Metacognition of agency workshop (2015, May), co-organizer and co-chair.
-\end{itemize}
 
 \subsection*{Peer review service}
 \begin{itemize}
+\item Advances in Methods and Practices in Psychological Science
 \item Acta Psychologica
 \item Attention, Perception, \& Psychophysics
+\item International Journal of Psychology
+\item Journal of Adolescence
 \item Journal of Consciousness Studies
 \item Journal of the Experimental Analysis of Behavior
 \item Psychology of Consciousness
+\item Royal Society Open Science
 \end{itemize}
 
 \section*{Languages}
@@ -189,9 +238,7 @@ cognitive psychology \ • \ metacognition \ • \ applied statistics
 \item R
 \item Python
 \item Stan
-\item JavaScript
-\item HTML \& CSS
-\item MATLAB
+\item HTML \& CSS \& JavaScript
 \end{itemize}
 \end{multicols}
 
