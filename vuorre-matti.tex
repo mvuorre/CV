@@ -40,11 +40,14 @@
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{-}
 
+% COLORS -- Dracula
+\usepackage{draculatheme}
+
 % HEADINGS
 \usepackage{sectsty} 
 \usepackage[normalem]{ulem} 
-\sectionfont{\rmfamily\mdseries\upshape\Large}
-\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\sectionfont{\rmfamily\mdseries\upshape\Large\addfontfeature{Color = draculaorange}}
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize\addfontfeature{Color = draculayellow}} 
 \subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
 % Space around headers
 \usepackage{titlesec}
@@ -61,13 +64,13 @@
 
 % PDF SETUP
 \usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Matti Vuorre - CV},pdfauthor={Matti Vuorre}]{hyperref} 
-\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+\hypersetup{linkcolor=draculapurple,citecolor=draculapurple,filecolor=black,urlcolor=draculapurple} 
 \urlstyle{same}
 
 % Content
 \begin{document}
-\noindent{\LARGE Matti Vuorre}\\[4pt]
-{\Large >> Curriculum vitae}
+\noindent{\LARGE\color{draculapink} Matti Vuorre}\\[4pt]
+{\Large\color{draculagreen} >> Curriculum vitae}
 \vspace{24pt}
 
 \setlength\multicolsep{0pt}
