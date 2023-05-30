@@ -3,5 +3,5 @@
 .RData
 .Ruserdata
 templates/
-source/*.log
-source/*.gz
+*.log
+*.gz
