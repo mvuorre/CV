@@ -1,10 +1,9 @@
 // CV - Matti Vuorre (mjvuorre@uvt.nl)
 // https://github.com/mvuorre/CV
 
-// To manage multiple bibliographies
-// (for presentations, articles, etc.)
-#import "@preview/alexandria:0.1.3": *
+/* Imports */
 #import "@preview/marge:0.1.0": sidenote
+#import "functions.typ": *
 
 /* Styles */
 #set page(
@@ -51,9 +50,9 @@
   dy: 0.05em,
   gap: 0em,
   side: "left",
-    format: it => {
+  format: it => {
     align(right)[#it.default]
-  }
+  },
 )
 
 /* Content */
@@ -158,9 +157,7 @@
 - Recommender at #link("https://rr.peercommunityin.org/public/user_public_page?userId=1570")[Peer Community In Registered Reports]
 - Editor for the #link("https://www.cos.io/meta")[Instagram Data Access Pilot for Well-being Research]
 
-I have acted as a peer reviewer for Advances in Methods and Practices in Psychological Science; Acta Psychologica; Attention, Perception, & Psychophysics; British Journal of Mathematical and Statistical Psychology; Communication Research; International Journal of Psychology; John Templeton Foundation; Journal of Adolescence; Journal of Consciousness Studies; Journal of the Experimental Analysis of Behavior; Journal of Experimental Psychology: General; Nature Human Behaviour; Peer Community In Registered Reports; Psychological Science; Psychology of Consciousness; and Royal Society Open Science.
-
-My future peer-review services are directed toward diamond OA outlets and open peer-reviews. I always sign my reviews.
+I have acted as a peer reviewer for Advances in Methods and Practices in Psychological Science; Acta Psychologica; Attention, Perception, & Psychophysics; British Journal of Mathematical and Statistical Psychology; Communication Research; International Journal of Psychology; John Templeton Foundation; Journal of Adolescence; Journal of Consciousness Studies; Journal of the Experimental Analysis of Behavior; Journal of Experimental Psychology: General; Nature Human Behaviour; Peer Community In Registered Reports; Psychological Science; Psychology of Consciousness; and Royal Society Open Science. I always sign my reviews.
 
 = Publications & Academic Contributions
 
@@ -169,72 +166,22 @@ See #link("https://www.zotero.org/vuorre")[Zotero] or #link("https://scholar.goo
 == Publications
 
 // Turn off link coloring
-#show link: set text(fill: black)
+// #show link: set text(fill: black)
 
-#[
-  #show: alexandria(prefix: "y-", read: path => read(path))
-  #set par(spacing: 0.76em, leading: 0.58em)
-  #bibliographyx(
-    "cv-publications.bib",
-    title: none,
-    prefix: "y-",
-    full: true,
-    style: "cell.csl",
-  )
-]
-
-== Software
-
-#[
-  #show: alexandria(prefix: "sw-", read: path => read(path))
-  #set par(spacing: 0.76em, leading: 0.58em)
-  #bibliographyx(
-    "cv-software.bib",
-    title: none,
-    prefix: "sw-",
-    full: true,
-    style: "cell.csl",
-  )
-]
-
-== Public Engagement & Media
-
-#[
-  #show: alexandria(prefix: "x-", read: path => read(path))
-  #set par(spacing: 0.65em, leading: 0.6em)
-  #bibliographyx(
-    "cv-press.bib",
-    title: none,
-    prefix: "x-",
-    style: "cell.csl",
-    full: true,
-  )
-]
+#yamlbib(yaml("cv-publications.yaml"))
 
 == Presentations
 
-#[
-  #show: alexandria(prefix: "pres-", read: path => read(path))
-  #set par(spacing: 0.65em, leading: 0.6em)
-  #bibliographyx(
-    "cv-presentations.bib",
-    title: none,
-    prefix: "pres-",
-    full: true,
-    style: "cell.csl",
-  )
-]
+#yamlbib(yaml("cv-presentations.yaml"))
+
+== Software
+
+#yamlbib(yaml("cv-software.yaml"))
+
+== Public Engagement & Media
+
+#yamlbib(yaml("cv-press.yaml"))
 
 == Other writing
 
-#[
-  #show: alexandria(prefix: "ot-", read: path => read(path))
-  #set par(spacing: 0.76em, leading: 0.58em)
-  #bibliographyx(
-    "cv-other.bib",
-    title: none,
-    prefix: "ot-",
-    full: true,
-    style: "cell.csl",
-  )
-]
+#yamlbib(yaml("cv-other.yaml"))
