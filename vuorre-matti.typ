@@ -132,6 +132,7 @@
 
 == Workshops
 
+- #year("2025")Collaborative science in the age of software (Princeton University; #link("https://psych.princeton.edu/news-events/2025/matti-vuorre-assistant-professor-tilburg-university"))
 - #year("2024")Bayesian regression modelling (University of Basel; #link("https://vuorre.com/workshop/"))
 - #year("2023")Data visualization workshop (Tilburg University)
 - #year("2020")Bayesian regression modelling with brms (University of Zürich; #link("https://vuorre.com/brms-workshop/"))
