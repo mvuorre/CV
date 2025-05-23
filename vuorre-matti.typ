@@ -1,6 +1,31 @@
 // CV - Matti Vuorre (mjvuorre@uvt.nl)
 // https://github.com/mvuorre/CV
 
+/* Constants */
+/// Color scheme for the CV
+#let colors = (
+  link: blue,
+  background: luma(240),
+)
+
+/// Spacing values used throughout the document
+#let spacing = (
+  paragraph: 1.2em,
+  header-line: 2.26cm,
+  sidenote-padding: 0.4cm,
+  sidenote-dy: 0.05em,
+  block-spacing: 2em,
+  header-spacing: 0.8em,
+)
+
+/// Typography settings
+#let fonts = (
+  main: "Libertinus Serif",
+  size: 12pt,
+  title-size: 22pt,
+  subtitle-size: 15.8pt,
+)
+
 /* Imports */
 #import "@preview/marge:0.1.0": sidenote
 #import "functions.typ": *
@@ -18,7 +43,7 @@
       #align(right)[
         #set block(spacing: 0.6em)
         Matti Vuorre
-        #line(length: 2.26cm, stroke: 0.5pt)
+        #line(length: spacing.header-line, stroke: 0.5pt)
       ]
     ]
   },
@@ -33,21 +58,22 @@
     ]
   },
 )
-#set par(spacing: 1.2em, leading: 0.65em)
-#set text(font: "Libertinus Serif", size: 12pt)
+#set par(spacing: spacing.paragraph, leading: 0.65em)
+#set text(font: fonts.main, size: fonts.size)
 #set list(marker: [•], tight: false)
-#show link: set text(fill: blue)
+#show link: set text(fill: colors.link)
 #show heading: it => [
-  #set par(spacing: 0.8em)
-  #set text(font: "Libertinus Serif", weight: "regular")
+  #set par(spacing: spacing.header-spacing)
+  #set text(font: fonts.main, weight: "regular")
   #smallcaps(it.body)
 ]
 
 /* Definitions */
+/// Create sidenote function for displaying years in the left margin
 #let year = sidenote.with(
   numbering: none,
-  padding: 0.4cm,
-  dy: 0.05em,
+  padding: spacing.sidenote-padding,
+  dy: spacing.sidenote-dy,
   gap: 0em,
   side: "left",
   format: it => {
@@ -56,8 +82,8 @@
 )
 
 /* Content */
-#text(size: 22pt)[#smallcaps([Matti Vuorre])] \
-#text(size: 15.8pt)[#smallcaps([» Curriculum vitae])] \
+#text(size: fonts.title-size)[#smallcaps([Matti Vuorre])] \
+#text(size: fonts.subtitle-size)[#smallcaps([» Curriculum vitae])] \
 #v(1em)
 
 #grid(
@@ -82,7 +108,7 @@
   ],
 )
 
-#block(fill: luma(240), inset: 1em, radius: 4pt, spacing: 2em)[
+#block(fill: colors.background, inset: 1em, radius: 4pt, spacing: spacing.block-spacing)[
   #set par(justify: true)
   I am a psychological scientist at the Tilburg School of Social and Behavioral Sciences at Tilburg University, where I study cognition and well-being particularly in the context of digital environments using experimental, data science, and statistical methods.
 ]
@@ -169,20 +195,20 @@ See #link("https://www.zotero.org/vuorre")[Zotero] or #link("https://scholar.goo
 // Turn off link coloring
 // #show link: set text(fill: black)
 
-#yamlbib(yaml("cv-publications.yaml"))
+#yaml-section("cv-publications.yaml")
 
 == Presentations
 
-#yamlbib(yaml("cv-presentations.yaml"))
+#yaml-section("cv-presentations.yaml")
 
 == Software
 
-#yamlbib(yaml("cv-software.yaml"))
+#yaml-section("cv-software.yaml")
 
 == Public Engagement & Media
 
-#yamlbib(yaml("cv-press.yaml"))
+#yaml-section("cv-press.yaml")
 
 == Other writing
 
-#yamlbib(yaml("cv-other.yaml"))
+#yaml-section("cv-other.yaml")
