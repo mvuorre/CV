@@ -16,6 +16,7 @@
   sidenote-dy: 0.05em,
   block-spacing: 2em,
   header-spacing: 0.8em,
+  list-spacing: 0.7em,
 )
 
 /// Typography settings
@@ -61,6 +62,7 @@
 #set par(spacing: spacing.paragraph, leading: 0.65em)
 #set text(font: fonts.main, size: fonts.size)
 #set list(marker: [•], tight: false)
+#set enum(spacing: spacing.list-spacing)
 #show link: set text(fill: colors.link)
 #show heading: it => [
   #set par(spacing: spacing.header-spacing)
