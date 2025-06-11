@@ -132,6 +132,7 @@
 = Research Funding
 
 - #year("2024")Capturing the Digital Footprints of Video Game Play. Economic and Social Research Council. (_Co-I with K. Magnusson and PI A. Przybylski. £263,696._)
+- Gaming for Better or Worse: Longitudinal Analysis of Objective Video Game Play Data and Mental Health (_Co-PI with K. Magnusson. SEK3,393,552._)
 - Understanding the associations between online video game play and well-being in a representative Dutch sample. Tilburg University. (_Co-PI with M. Klincewicz. €8,577._)
 - How does digitalization associate with brain aging? Tilburg University. (_Co-PI with S. M. Kia. €12,000._)
 - #year("2023")Does the nose know? Validating immersive multisensory VR food environments to study eating behaviour. Tilburg University. (_Co-I with PI R. de Vries. €16,344._)
