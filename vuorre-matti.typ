@@ -2,13 +2,13 @@
 // https://github.com/mvuorre/CV
 
 /* Constants */
-/// Color scheme for the CV
+// Color scheme for the CV
 #let colors = (
   link: blue,
   background: luma(240),
 )
 
-/// Spacing values used throughout the document
+// Spacing values used throughout the document
 #let spacing = (
   paragraph: 1.2em,
   header-line: 2.26cm,
@@ -19,7 +19,7 @@
   list-spacing: 0.7em,
 )
 
-/// Typography settings
+// Typography settings
 #let fonts = (
   main: "Libertinus Serif",
   size: 12pt,
@@ -71,7 +71,7 @@
 ]
 
 /* Definitions */
-/// Create sidenote function for displaying years in the left margin
+// Create sidenote function for displaying years in the left margin
 #let year = sidenote.with(
   numbering: none,
   padding: spacing.sidenote-padding,
@@ -131,12 +131,13 @@
 
 = Research Funding
 
-- #year("2024")Capturing the Digital Footprints of Video Game Play. Economic and Social Research Council. (_Co-I with K. Magnusson and PI A. Przybylski. £263,696._)
-- Gaming for Better or Worse: Longitudinal Analysis of Objective Video Game Play Data and Mental Health (_Co-PI with K. Magnusson. SEK3,393,552._)
+- #year("2025")Testing the Technology Related Attention Decline hypothesis. European Research Council Starting Grant. (_PI. €1,498,835._)
+- #year("2024")Capturing the Digital Footprints of Video Game Play. Economic and Social Research Council. (_Co-PI with K. Magnusson & A. Przybylski. £263,696._)
+- Gaming for Better or Worse: Longitudinal Analysis of Objective Video Game Play Data and Mental Health. Swedish Research Council for Health, Working Life and Welfare. (_Co-PI with K. Magnusson. SEK3,393,552._)
 - Understanding the associations between online video game play and well-being in a representative Dutch sample. Tilburg University. (_Co-PI with M. Klincewicz. €8,577._)
 - How does digitalization associate with brain aging? Tilburg University. (_Co-PI with S. M. Kia. €12,000._)
 - #year("2023")Does the nose know? Validating immersive multisensory VR food environments to study eating behaviour. Tilburg University. (_Co-I with PI R. de Vries. €16,344._)
-- #year("2022")Understanding video game play and mental health. Economic and Social Research Council. (_Co-I with Co-I K. Magnusson and PI A. Przybylski. £935,050._)
+- #year("2022")Understanding video game play and mental health. Economic and Social Research Council. (_Co-PI with K. Magnusson & A. Przybylski. £935,050._)
 - #year("2021")The association between video game play and cognition. University of Oxford. (_PI. £10,000_)
 
 = Honors & Awards
@@ -185,9 +186,8 @@
 - Member of the #link("https://www.tilburguniversity.edu/research/tilburg-young-academy/members")[Tilburg Young Academy]
 - TSB Faculty ambassador to the #link("https://www.tilburguniversity.edu/research/open-science-community")[Tilburg Open Science Community]
 - Recommender at #link("https://rr.peercommunityin.org/public/user_public_page?userId=1570")[Peer Community In Registered Reports]
+- Recommender at #link("https://psych.peercommunityin.org/")[Peer Community In Psychology]
 - Editor for the #link("https://www.cos.io/meta")[Instagram Data Access Pilot for Well-being Research]
-
-I have acted as a peer reviewer for Advances in Methods and Practices in Psychological Science; Acta Psychologica; Attention, Perception, & Psychophysics; British Journal of Mathematical and Statistical Psychology; Communication Research; International Journal of Psychology; John Templeton Foundation; Journal of Adolescence; Journal of Consciousness Studies; Journal of the Experimental Analysis of Behavior; Journal of Experimental Psychology: General; Nature Human Behaviour; Peer Community In Registered Reports; Psychological Science; Psychology of Consciousness; and Royal Society Open Science. I always sign my reviews.
 
 = Publications & Academic Contributions
 
