@@ -110,7 +110,7 @@
   ],
 )
 
-#block(fill: colors.background, inset: 1em, radius: 4pt, spacing: spacing.block-spacing)[
+#block(fill: colors.background, inset: 0.8em, radius: 4pt, spacing: spacing.block-spacing)[
   #set par(justify: true)
   I am a psychological scientist at the Tilburg School of Social and Behavioral Sciences at Tilburg University, where I study cognition and well-being particularly in the context of digital environments using experimental, data science, and statistical methods.
 ]
