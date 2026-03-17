@@ -131,14 +131,14 @@
 
 = Research Funding
 
-- #year("2025")Testing the Technology Related Attention Decline hypothesis. European Research Council Starting Grant. (_PI. €1,498,835._)
-- #year("2024")Capturing the Digital Footprints of Video Game Play. Economic and Social Research Council. (_Co-PI with K. Magnusson & A. Przybylski. £263,696._)
-- Gaming for Better or Worse: Longitudinal Analysis of Objective Video Game Play Data and Mental Health. Swedish Research Council for Health, Working Life and Welfare. (_Co-PI with K. Magnusson. SEK3,393,552._)
-- Understanding the associations between online video game play and well-being in a representative Dutch sample. Tilburg University. (_Co-PI with M. Klincewicz. €8,577._)
-- How does digitalization associate with brain aging? Tilburg University. (_Co-PI with S. M. Kia. €12,000._)
-- #year("2023")Does the nose know? Validating immersive multisensory VR food environments to study eating behaviour. Tilburg University. (_Co-I with PI R. de Vries. €16,344._)
-- #year("2022")Understanding video game play and mental health. Economic and Social Research Council. (_Co-PI with K. Magnusson & A. Przybylski. £935,050._)
-- #year("2021")The association between video game play and cognition. University of Oxford. (_PI. £10,000_)
+- #year("2025")Testing the Technology Related Attention Decline hypothesis. European Research Council Starting Grant. (_PI._)
+- #year("2024")Capturing the Digital Footprints of Video Game Play. Economic and Social Research Council. (_Co-PI with K. Magnusson & A. Przybylski._)
+- Gaming for Better or Worse: Longitudinal Analysis of Objective Video Game Play Data and Mental Health. Swedish Research Council for Health, Working Life and Welfare. (_Co-PI with K. Magnusson._)
+- Understanding the associations between online video game play and well-being in a representative Dutch sample. Tilburg University. (_Co-PI with M. Klincewicz._)
+- How does digitalization associate with brain aging? Tilburg University. (_Co-PI with S. M. Kia._)
+- #year("2023")Does the nose know? Validating immersive multisensory VR food environments to study eating behaviour. Tilburg University. (_Co-I with PI R. de Vries._)
+- #year("2022")Understanding video game play and mental health. Economic and Social Research Council. (_Co-PI with K. Magnusson & A. Przybylski._)
+- #year("2021")The association between video game play and cognition. University of Oxford. (_PI._)
 
 = Honors & Awards
 
