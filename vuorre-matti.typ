@@ -131,7 +131,7 @@
 
 = Research Funding
 
-- #year("2025")Testing the Technology Related Attention Decline hypothesis. European Research Council Starting Grant. (_PI._)
+- #year("2025")Testing the Technology Related Attention Decline hypothesis. European Research Council Starting Grant. (_PI. #link("https://doi.org/10.3030/101219901")_)
 - #year("2024")Capturing the Digital Footprints of Video Game Play. Economic and Social Research Council. (_Co-PI with K. Magnusson & A. Przybylski._)
 - Gaming for Better or Worse: Longitudinal Analysis of Objective Video Game Play Data and Mental Health. Swedish Research Council for Health, Working Life and Welfare. (_Co-PI with K. Magnusson._)
 - Understanding the associations between online video game play and well-being in a representative Dutch sample. Tilburg University. (_Co-PI with M. Klincewicz._)
