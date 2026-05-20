@@ -188,6 +188,7 @@
 - Recommender at #link("https://rr.peercommunityin.org/public/user_public_page?userId=1570")[Peer Community In Registered Reports]
 - Recommender at #link("https://psych.peercommunityin.org/")[Peer Community In Psychology]
 - Editor for the #link("https://www.cos.io/meta")[Instagram Data Access Pilot for Well-being Research]
+- Chair of #link("https://psyarxiv.com")[PsyArXiv] Outreach and Public Engagement Subcommittee
 
 = Publications & Academic Contributions
 
