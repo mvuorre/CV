@@ -180,7 +180,6 @@
 - #year("2013")Visual Perception (Victoria University of Wellington)
 - #year("2011")Introduction to Psychology (Victoria University of Wellington)
 
-
 = Service to the Profession
 
 - Member of the #link("https://www.tilburguniversity.edu/research/tilburg-young-academy/members")[Tilburg Young Academy]
