@@ -82,13 +82,18 @@
 ///
 /// Args:
 ///   file: Path to YAML file containing bibliography data with 'references' array
+///   types: Optional CSL item types to include
 ///
 /// Returns: Formatted bibliography list sorted by date (newest first)
-#let yaml-section(file) = {
+#let yaml-section(file, types: none) = {
   let contents = yaml(file)
+  let references = if types == none {
+    contents.references
+  } else {
+    contents.references.filter(item => item.at("type", default: none) in types)
+  }
   // Sort descending by year, month, day with safe date extraction
-  let items = contents
-    .references
+  let items = references
     .sorted(
       key: it => {
         let date = extract-date(it)

@@ -198,20 +198,16 @@ See #link("https://www.zotero.org/vuorre")[Zotero] or #link("https://scholar.goo
 // Turn off link coloring
 // #show link: set text(fill: black)
 
-#yaml-section("cv-publications.yaml")
+#yaml-section("cv.yaml", types: ("article-journal", "article", "book", "thesis"))
 
 == Presentations
 
-#yaml-section("cv-presentations.yaml")
+#yaml-section("cv.yaml", types: ("speech",))
 
 == Software
 
-#yaml-section("cv-software.yaml")
-
-== Public Engagement & Media
-
-#yaml-section("cv-press.yaml")
+#yaml-section("cv.yaml", types: ("software",))
 
 == Other writing
 
-#yaml-section("cv-other.yaml")
+#yaml-section("cv.yaml", types: ("post-weblog", "webpage"))
